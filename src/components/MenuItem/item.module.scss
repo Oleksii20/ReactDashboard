@@ -1,0 +1,70 @@
+@import '../../assets/vars/vars.scss';
+
+.item_box{
+    a {
+        width: 100%;
+
+        .item {
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+            padding: 18px 24px 18px 32px;
+            cursor: pointer;
+
+            &_name {
+                font-weight: 400;
+                color: $santas-gray;
+            }
+
+            &_icon {
+                min-width: 16px;
+                min-height: 16px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    font-size: 16px;
+
+                    &::before {
+                        color: $mid-gray;
+                    }
+                }
+            }
+        }
+
+        &:hover,
+        &.active {
+            background-color: $mako;
+        }
+
+        &:hover .item_name,
+        &.active .item_name {
+            color: $fog;
+        }
+
+        &:hover .item_icon,
+        &.active .item_icon {
+            i {
+                &::before {
+                    color: $fog;
+                }
+            }
+        }
+
+        &.active {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 3px;
+                background-color: $fog;
+            }
+        }
+    }
+}

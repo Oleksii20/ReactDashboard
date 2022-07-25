@@ -1,0 +1,32 @@
+
+@import '../../assets/vars/vars.scss';
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 255px;
+    height: 100vh;
+    background-color: $tuna;
+    &_logo{
+        padding: 40px 35px 60px;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        span{
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 24px;
+            color: $santas-gray;
+        }
+    }
+    &_nav{
+        max-height: calc(100vh - 132px);
+        overflow-y: auto;
+        .sub_menu{
+            border-top: 1px solid $mako;
+            padding-top: 16px;
+            margin-top: 16px;
+        }
+    }
+}

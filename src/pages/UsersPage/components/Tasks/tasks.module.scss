@@ -1,0 +1,79 @@
+@import '../../../../assets/vars/vars.scss';
+
+.tickets{
+    flex: 1;
+    padding: 32px 0 8px;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px 16px;
+        .title{
+            h3 {
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                color: $charade;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.1px;
+                color: $santas-gray2;
+            }
+        }
+        a{
+            color: $blue-ribbon;
+        }
+    }
+    .task{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 32px 18px;
+        border-top: 1px solid $athens-gray;
+        .name{
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            color: $charade;
+        }
+        .type{
+            padding: 5px 12px;
+            text-transform: uppercase;
+            font-size: 11px;
+            line-height: 14px;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+        }
+        
+    }
+    .create_task {
+        border-top: 0;
+        column-gap: 30px;
+        input {
+            border: 0;
+            outline: 0;
+            width: 100%;
+            font-size: 14px;
+            &::placeholder{
+                color: $french-gray;
+            }
+        }
+
+        button {
+            width: 24px;
+            height: 24px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $whisper;
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}

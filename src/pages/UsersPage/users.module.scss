@@ -1,0 +1,8 @@
+@import '../../assets/vars/vars.scss';
+
+.users{
+    &_footer{
+        display: flex;
+        column-gap: 30px;
+    }
+}

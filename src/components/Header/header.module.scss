@@ -1,0 +1,64 @@
+@import '../../assets/vars/vars.scss';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+    &_title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        color: $charade;
+    }
+    &_actions{
+        display: flex;
+        align-items: center;
+        .left,
+        .right{
+            display: flex;
+            align-items: center;
+        }
+        .left{
+            padding-right: 32px;
+            margin-right: 32px;
+            border-right: 1px solid $athens-gray;
+            column-gap: 24px;
+            .notification_box{
+                position: relative;
+                span{
+                    position: absolute;
+                    right: -1px;
+                    top: 1px;
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background-color: $blue-ribbon;
+                    box-shadow: 0 0 0 1px $white-lilac;
+                }
+            }
+        }
+        .right{
+            column-gap: 14px;
+            span{
+                color: $charade;
+            }
+            .avatar{
+                border: 2px solid $athens-gray;
+                border-radius: 50%;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

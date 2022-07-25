@@ -1,0 +1,67 @@
+@import '../../assets/vars/vars.scss';
+
+.user{
+    .header{
+        height: 230px;
+        position: relative;
+        img{
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 0 5px $white;
+        }
+    }
+    .body{
+        background-color: $white;
+        border: 1px solid $athens-gray;
+        border-radius: 0 0 8px 8px;
+        border-top: 0;
+        padding: 0 55px 130px;
+        .title{
+            padding-top: 65px;
+            text-align: center;
+            margin-bottom: 70px;
+            .name{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 45px;
+                letter-spacing: 0.4px;
+                color: $charade;
+                margin-bottom: 5px;
+            }
+            .company{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.4px;
+                color: $jumbo;
+            }
+        }
+        .info{
+            & > div{
+                margin-bottom: 24px;
+                a{
+                    color: $blue-ribbon;
+                    font-size: 16px;
+                    text-decoration: underline;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                color: $black;
+                &.info_title{
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 45px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}

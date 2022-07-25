@@ -1,0 +1,57 @@
+@import './assets/fonts/style.scss';
+@import './assets/vars/vars.scss';
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+ul{
+  list-style: none;
+}
+
+button{
+  background-color: inherit;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  background-color: $white-lilac;
+}
+
+.grid-item{
+  background-color: $white;
+  border: 1px solid $athens-gray;
+  border-radius: 8px;
+}
+
+.urgent {
+  background-color: $amber;
+  color: $white;
+}
+
+.new{
+  background-color: $shamrock;
+  color: $white;
+}
+.default{
+  background-color: $whisper;
+    color: $santas-gray2;
+}

@@ -1,0 +1,98 @@
+@import '../../../../assets/vars/vars.scss';
+
+.users{
+    margin-bottom: 30px;
+    &_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 32px 36px;
+        h3{
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            color: $charade;
+        }
+        .sort_box{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            span{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: $fiord;
+            }
+        }
+    }
+    &_table{
+        border-radius: 0 0 8px 8px;
+        table{
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            tr {
+                th, td{
+                    padding: 12px 20px;
+                }
+                th:first-child,
+                td:first-child{
+                    padding-left: 32px;
+                }
+                th{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $santas-gray2;
+                }
+                td{
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    border-top: 1px solid $athens-gray;
+                }
+            }
+            tbody tr:hover{
+                background-color: $zircon;
+            }
+            tbody tr:last-child td:first-child{
+                border-bottom-left-radius: 8px;
+            }
+            tbody tr:last-child td:last-child {
+                border-bottom-right-radius: 8px;
+            }
+            .user_info{
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+                img{
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                }
+            }
+            .sub_text{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.1px;
+                color: $french-gray;
+                margin-top: 4px;
+            }
+            .distance{
+                padding: 5px 12px;
+                border-radius: 100px;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 14px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: $white;
+                width: max-content;
+            }
+            .normal{
+                background-color: $shamrock;
+            }
+        }
+    }
+}
